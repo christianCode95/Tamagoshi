@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Meu Demônio Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="hell.mp4" type="video/mp4">
+    </video>
+    <div class="tamagotchi-container">
+        <h1>Meu Demônio Virtual</h1>
+        <div class="pet-container">
+            <div id="pet-image" class="pet-image">
+                <img id="pet-img" src="1.png" alt="Demônio bebê">
+            </div>
+        </div>
+        <p id="pet-name" class="pet-name">Pequeno Demônio</p>
+
+        <div class="status-panel">
+            <div class="status-item">🍗 Fome: <span id="status-hunger">100%</span></div>
+            <div class="status-item">😈 Maldade: <span id="status-happiness">100%</span></div>
+            <div class="status-item">⚡ Energia: <span id="status-energy">100%</span></div>
+            <div class="status-item">🔥 Chamas: <span id="status-cleanliness">100%</span></div>
+            <div class="status-item">❤️‍🔥 Saúde: <span id="status-health">100%</span></div>
+            <div class="status-item">📅 Idade: <span id="status-age">0</span> dias</div>
+        </div>
+
+        <div class="action-buttons">
+            <button id="feed-btn">🍗 Alimentar</button>
+            <button id="play-btn">🎮 Brincar</button>
+            <button id="sleep-btn">😴 Dormir</button>
+            <button id="clean-btn">🔥 Alimentar Chamas</button>
+        </div>
+
+        <div class="game-controls">
+            <button id="save-btn">💾 Salvar</button>
+            <button id="load-btn">📂 Carregar</button>
+            <button id="sacrifice-btn" class="sacrifice-btn">⚔️ Sacrificar</button>
+            <button id="restart-btn">🔄 Reiniciar</button>
+        </div>
+
+        <div id="message-box" class="modal">
+            <div class="modal-content">
+                <p id="message-text"></p>
+                <button id="close-message-btn">OK</button>
+            </div>
+        </div>
+
+        <div id="confirmation-box" class="confirmation-modal">
+            <div class="confirmation-content">
+                <p id="confirmation-text">Tem certeza que deseja sacrificar seu demônio?</p>
+                <div class="confirmation-buttons">
+                    <button id="confirm-yes">Sim</button>
+                    <button id="confirm-no">Não</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
